@@ -5,7 +5,7 @@ interface PomodoroSettings {
 }
 
 const DEFAULT_SETTINGS: PomodoroSettings = {
-	defaultDuration: 25,
+	defaultDuration: 58,
 };
 
 export default class PomodoroPlugin extends Plugin {
@@ -13,7 +13,7 @@ export default class PomodoroPlugin extends Plugin {
 	statusBarItem: HTMLElement;
 	remainingTime = 0;
 	isRunning = false;
-	durationCycle: number[] = [25, 15, 5];
+	durationCycle: number[] = [58, 25, 15];
 	currentDurationIndex = 0;
 	private currentInterval: number | null = null;
 
